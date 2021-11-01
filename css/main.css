@@ -1,0 +1,28 @@
+body{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+html{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;;
+}
+.card{
+    border-radius: 5;
+    margin: 10%;
+    margin-bottom: 10%;
+    opacity: 0.8;
+    font-weight: 800;
+}
+.form-control{
+    color: transparent;
+    opacity: .5;
+    font-weight: 800;
+}
+.form-label{
+    font-weight: 700;
+    margin-top: 20%;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+
+<link rel="stylesheet" href="css/main.css".css>
+<title>Today's Weather</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <form>
+                <div class="mb-3">
+                <label for="Weather" class="form-label">City Name</label>
+                <input type="text" class="form-control" placeholder="Enter City Name">
+                </div>
+                <button    onclick="loadData() ;" type="reset" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 offset-md-4 mt-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <h2 class="card-title"></h2>
+                    <h6 id="current">Currently:</h6>
+                    <h6 id='feels'>Feels Like:</h6>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li id= 'High' class="list-group-item">High Temp:
+                    </li>
+                    <li id='Low' class="list-group-item">Low Temp:
+                    </li>
+            
+                    <h6 class="col-md-7 offset-md-2  mt-3">Forcast For Today
+                    <li id='forecastfortoday'class="list-group list-group-flush">
+                        
+                    </li>
+                        <li id="Forecast" class="list-group list-group-item">Skies:</li>
+                        <li id='Humidity' class="list-group list-group-item">Humidity:</li>
+                        <li id='Windspeed' class="list-group list-group-item">Wind Speed:</li>
+            
+                    </h6>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
