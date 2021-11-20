@@ -41,38 +41,45 @@ const loadData = async() =>{
 
         let feel= weatherData.main.feels_like;
         console.log(feel)   
-        let feels_element =  `<p id='feel_tag'>${feel}</p>`;
+        Feels.innerHTML='Feels Like:'
+        let feels_element =  `<p>${feel}</p>`;
         Feels.insertAdjacentHTML('beforeend', feels_element)
 
 
         let current= weatherData.main.temp;
-        console.log(current)   
+        console.log(current)
+        Currently.innerHTML="current"   
         let curr_element = `<p>${current}</p>`;
         Currently.insertAdjacentHTML('beforeend', curr_element)
 
         let high_temp= weatherData.main.temp_max
         console.log(high_temp)   
+        High.innerHTML='High'
         let high_element = `<p>${high_temp}</p>`;
         High.insertAdjacentHTML('beforeend', high_element)
 
         let low_temp= weatherData.main.temp_min
-        console.log(low_temp)   
+        console.log(low_temp) 
+        Low.innerHTML= 'Low' 
         let low_element = `<p>${low_temp}</p>`;
         Low.insertAdjacentHTML('beforeend', low_element)
     
 
         let fore= weatherData.weather[0].description;
         console.log(fore)   
+        Forecast.innerHTML="Skies:" 
         let fore_element = `<p>${fore}</p>`;
         Forecast.insertAdjacentHTML('beforeend', fore_element)
     
         let hum = weatherData.main.humidity;
         console.log(hum)
+        Humidity.innerHTML='Humidity'
         let humid_element = `<p>${hum}</p>`;
         Humidity.insertAdjacentHTML('beforeend', humid_element)
 
         let wind = weatherData.wind.speed;
         console.log(wind)
+        WindSpeed.innerHTML='Windspeed'
         let win_element = `<p>${wind}</p>`;
         WindSpeed.insertAdjacentHTML('beforeend', win_element)
 
