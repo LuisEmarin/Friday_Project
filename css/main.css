@@ -26,3 +26,6 @@ html{
     font-weight: 700;
     margin-top: 20%;
 }
+.list-group-item{
+    font-weight: 500;
+}

@@ -42,45 +42,45 @@ const loadData = async() =>{
         let feel= weatherData.main.feels_like;
         console.log(feel)   
         Feels.innerHTML='Feels Like:'
-        let feels_element =  `<p>${feel}</p>`;
+        let feels_element =  `<p>${feel}°F</p>`;
         Feels.insertAdjacentHTML('beforeend', feels_element)
 
 
         let current= weatherData.main.temp;
         console.log(current)
-        Currently.innerHTML="current"   
-        let curr_element = `<p>${current}</p>`;
+        Currently.innerHTML="current:"   
+        let curr_element = `<p>${current}°F</p>`;
         Currently.insertAdjacentHTML('beforeend', curr_element)
 
         let high_temp= weatherData.main.temp_max
         console.log(high_temp)   
-        High.innerHTML='High'
-        let high_element = `<p>${high_temp}</p>`;
+        High.innerHTML='High:'
+        let high_element = `<p>${high_temp}°F</p>`;
         High.insertAdjacentHTML('beforeend', high_element)
 
         let low_temp= weatherData.main.temp_min
         console.log(low_temp) 
-        Low.innerHTML= 'Low' 
-        let low_element = `<p>${low_temp}</p>`;
+        Low.innerHTML= 'Low:' 
+        let low_element = `<p>${low_temp}°F</p>`;
         Low.insertAdjacentHTML('beforeend', low_element)
     
 
         let fore= weatherData.weather[0].description;
         console.log(fore)   
-        Forecast.innerHTML="Skies:" 
+        Forecast.innerHTML="Precipitation:" 
         let fore_element = `<p>${fore}</p>`;
         Forecast.insertAdjacentHTML('beforeend', fore_element)
     
         let hum = weatherData.main.humidity;
         console.log(hum)
-        Humidity.innerHTML='Humidity'
-        let humid_element = `<p>${hum}</p>`;
+        Humidity.innerHTML='Humidity:'
+        let humid_element = `<p>${hum}% </p>`;
         Humidity.insertAdjacentHTML('beforeend', humid_element)
 
         let wind = weatherData.wind.speed;
         console.log(wind)
-        WindSpeed.innerHTML='Windspeed'
-        let win_element = `<p>${wind}</p>`;
+        WindSpeed.innerHTML='Windspeed:'
+        let win_element = `<p>${wind} mph</p>`;
         WindSpeed.insertAdjacentHTML('beforeend', win_element)
 
 } 
